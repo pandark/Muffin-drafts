@@ -2,6 +2,8 @@ Voilà quelques trucs que ceux qui choisissent d'utiliser le meilleur éditeur d
 
 Vous n'aurez pas forcément besoin de tout ; à vous de piocher ce qui vous semble utile.
 
+Note : le signe `^` suivi d'un autre signe servira la plupart du temps à indiquer que l'on appuie en même temps sur la touche `ctrl` et sur la touche correspondant au deuxième signe. Par exemple `^x` correspond à ctrl+x.
+
 ### vimtutor
 Ouvrez un terminal, écrivez `vimtutor` puis validez avec la touche entrée. Vous pouvez maintenant suivre les instructions du tutoriel (en anglais) pour apprendre les bases de Vim.
 
@@ -31,7 +33,7 @@ La commande `:syntax on` active la coloration syntaxique. Bon, les couleurs de b
 L'entête, c'est bien gentil mais il est tout en haut du fichier. La commande `:set colorcolumn=80` permet de colorer la colonne indiquée (ici la 80ème). Par défaut, c'est en rouge vif, mais en cherchant un peu ça peut s'arranger assez facilement.
 
 #### Numérotation des lignes
-Afficher les numéros des lignes `:set number` ou relativement à la ligne actuelle `:set relativenumber` (`:set rn` ou `:set rel` puis un appuie sur la touche tab pour que vim complète la commande ^_-) pour inverser ces commandes, ajoutez `no` devant ou un point d'exclamation derrière (`:set nonumber` pour ne pas les afficher, et `:set number!` pour inverser le comportement actuel). La numérotation relative est particulièrement pratique pour vérifier à combien de lignes on en est dans une fonction en se plaçant sur la première accolade, mais peut être source de distraction si on la laisse activée tout le temps.
+Afficher les numéros des lignes `:set number` ou relativement à la ligne actuelle `:set relativenumber` (`:set rn` ou `:set rel` puis un appui sur la touche tab pour que vim complète la commande ^_-) pour inverser ces commandes, ajoutez `no` devant ou un point d'exclamation derrière (`:set nonumber` pour ne pas les afficher, et `:set number!` pour inverser le comportement actuel). La numérotation relative est particulièrement pratique pour vérifier à combien de lignes on en est dans une fonction en se plaçant sur la première accolade, mais peut être source de distraction si on la laisse activée tout le temps.
 
 ### Commandes et raccourcis utiles :
 * `fn + F1` pour ajouter les entêtes 42 à vos fichiers.
@@ -43,13 +45,13 @@ Afficher les numéros des lignes `:set number` ou relativement à la ligne actue
 * `gU` pour mettre en majuscule, `gu` pour mettre en minuscule (par exemple j'ai pas mal utilisé `gUaW` pour mettre les noms des #define en majuscules).
 * `:w` pour enregistrer, `:wq` ou `ZZ` pour quitter en enregistrant, `:q!` ou `ZQ` pour quitter sans enregistrer
 * `^l` pour rafraichir l'affichage (pratique quand des messages de déconnexion/reconnexion du nfs s'affichent ou qu'on a redimensionné la fenêtre du terminal)
-* `/` (par exemple /toto pour trouver toto, rototo et totoro) pour faire une recherche (ça fonctionne aussi dans les mans) ou * pour faire une recherche exacte sur le mot sur lequel est placé le curseur, puis n pour aller à l'occurrence suivante correspondant au motif de la recherche ou N pour aller à la précédente.
+* `/` (par exemple /toto pour trouver toto, rototo et totoro) pour faire une recherche (ça fonctionne aussi dans les pages de man) ou * pour faire une recherche exacte sur le mot sur lequel est placé le curseur, puis n pour aller à l'occurrence suivante correspondant au motif de la recherche ou N pour aller à la précédente.
 * `u` pour défaire votre dernière action (undo), et `^r` pour refaire une action que vous avez défaite (on peut annuler et refaire plusieurs actions, par exemple `42u` `42^r` défait puis refait les 42 dernières actions).
 * `.` permet de refaire la dernière action que l'on a fait (rien à voir avec undo et redo cette fois), par exemple si je suis passé en mode insertion pour écrire toto puis que je suis sorti du mode insertion et que j'appuie sur `.`, un nouveau toto s'écrit (ce qui donnera probablement tottotoo).
 * `gf` pour ouvrir le fichier sur le nom duquel se trouve le curseur
-* `K`, `2K`, `3K` pour ouvrir la page (1, 2 ou 3) de man correspondant au mot sur lequel se trouve le curseur (sinon, vous pouvez aussi installer un des plugins qui permettent d'ouvrir les mans directement dans vim).
+* `K`, `2K`, `3K` pour ouvrir la page (1, 2 ou 3) de man correspondant au mot sur lequel se trouve le curseur (sinon, vous pouvez aussi installer un des plugins qui permettent d'ouvrir les pages de man directement dans vim).
 * `^a` et `^x` permettent d'incrémenter et décrémenter un nombre qui se trouverait sur la ligne (attention, ils suppriment les zéros qui se trouvent avant le nombre).
-* `:s/oompa/loompa/g` remplace toutes les occurrences de oompa par loompa dans la ligne `:%s/you lost/the game/g` remplace toutes les occurrences de you lost par the game dans toutes les lignes (sans le g à la fin, seul la première occurrence de la ligne ou des ligne est remplacée).
+* `:s/oompa/loompa/g` remplace toutes les occurrences de *oompa* par *loompa* dans la ligne `:%s/you lost/the game/g` remplace toutes les occurrences de *you lost* par *the game* dans toutes les lignes (sans le g à la fin, seul la première occurrence de la ligne ou des lignes est remplacée).
 
 ### Copier/coller en dehors de vim
 * Lorsque vous voulez coller depuis l'extérieur dans vim (avec commande+v) sans que les lignes soient réindentées automatiquement, utilisez la commande `:set paste`, puis `:set nopaste` pour réactiver l'indentation automatique une fois que vous avez terminé.
@@ -84,8 +86,8 @@ Pour effectuer une rotation entre deux panels, `^w r`. Pour modifier la taille d
 * `:tabn` et `:tabp` pour se déplacer entre les onglets
 
 ### Remapping de touches
-Il est possible (et même assez simple) d'associer une, plusieurs, ou une suite de touche à une commande ou à une d'autres touches.
-* Par exemple la commande `:inoremap kj <Esc>` vous permettra de tapper les touches k puis j en mode insertion (pour revenir en mode normal) au lieu de la touche échap (difficile d'accès). Vous pouvez l'ajouter à votre fichier de configuration, c'est bien pratique ;).
+Il est possible (et même assez simple) d'associer une, plusieurs, ou une suite de touches à une commande ou à une d'autres touches.
+* Par exemple la commande `:inoremap kj <Esc>` vous permettra de tapper les touches `k` puis `j` en mode insertion (pour revenir en mode normal) au lieu de la touche échap (difficile d'accès). Vous pouvez l'ajouter à votre fichier de configuration, c'est bien pratique ;).
 
 ### Les plugins
 Pour installer des plugins plus simplement : [Pathogen](https://github.com/tpope/vim-pathogen#installation) Si vous voulez plus d'options (et de complications diront certains) il existe des alternatives comme [NéoVundle](https://github.com/Shougo/neobundle.vim).
