@@ -7,7 +7,7 @@ Ouvrez un terminal, écrivez `vimtutor` puis validez avec la touche entrée. Vou
 
 ### Les modes
 Il y a plusieurs __modes__ dans vim, dont principalement
-* __Normal__, pour se déplacer rapidement et passer dans les autres modes (on y revient en tapant sur la __touche échappe__)
+* __Normal__, pour se déplacer rapidement et passer dans les autres modes (on y revient en tapant sur la __touche échap__)
 * __Insertion__, pour écrire du texte (on y arrive en tapant `i`, `a`, `I`, `A`, `o`, `O`, `s` ou `S` en mode normal)
 * __Ligne de commande__, pour taper des commandes à exécuter (on y arrive en tapant `:` en mode normal)
 * __Visuel__, pour sélectionner visuellement du texte (on y arrive en tapant `v`, `V` ou `^V` en mode normal)
@@ -85,7 +85,7 @@ Pour effectuer une rotation entre deux panels, `^w r`. Pour modifier la taille d
 
 ### Remapping de touches
 Il est possible (et même assez simple) d'associer une, plusieurs, ou une suite de touche à une commande ou à une d'autres touches.
-* Par exemple la commande `:inoremap kj <Esc>` vous permettra de tapper les touches k puis j en mode insertion (pour revenir en mode normal) au lieu de la touche échappe (difficile d'accès). Vous pouvez l'ajouter à votre fichier de configuration, c'est bien pratique ;).
+* Par exemple la commande `:inoremap kj <Esc>` vous permettra de tapper les touches k puis j en mode insertion (pour revenir en mode normal) au lieu de la touche échap (difficile d'accès). Vous pouvez l'ajouter à votre fichier de configuration, c'est bien pratique ;).
 
 ### Les plugins
 Pour installer des plugins plus simplement : [Pathogen](https://github.com/tpope/vim-pathogen#installation) Si vous voulez plus d'options (et de complications diront certains) il existe des alternatives comme [NéoVundle](https://github.com/Shougo/neobundle.vim).
