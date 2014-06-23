@@ -122,14 +122,15 @@ Les thèmes sont des plugins particuliers qui servent à définir les couleurs u
 Il est d'usage de partager son fichier de configuration (.vimrc) si possible commenté afin que les autres puissent y piocher des astuces intéressantes.
 * [Voilà le mien](https://github.com/pandark/dotfiles/blob/42/.vimrc)
 * [Celui de mblet](http://pastebin.com/QqE7Fivd) [voir forum intra](https://intra.42.fr/forum/#!/ALGO-1-001/Config-de-VIM)
-* Celui d'aviala](https://github.com/darnuria/my_dotfiles/blob/master/.vimrc)
+* Celui d'[aviala](https://github.com/darnuria/my_dotfiles/blob/master/.vimrc)
 
 ### S'entrainer et progresser
-####En ligne
+#### En ligne
 * Vimtutor
 * [Vim adventure](http://vim-adventures.com/)
 * [Vimgolf](http://vimgolf.com/)
-####IRL
+
+#### IRL
 * [TupperVim](http://wiki.mozfr.org/TupperVim)
 
 ### Distributions vim
