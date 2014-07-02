@@ -45,7 +45,7 @@ Afficher les numéros des lignes `:set number` ou relativement à la ligne actue
 * `gU` pour mettre en majuscule, `gu` pour mettre en minuscule (par exemple j'ai pas mal utilisé `gUaW` pour mettre les noms des #define en majuscules).
 * `:w` pour enregistrer, `:wq` ou `ZZ` pour quitter en enregistrant, `:q!` ou `ZQ` pour quitter sans enregistrer
 * `^l` pour rafraichir l'affichage (pratique quand des messages de déconnexion/reconnexion du nfs s'affichent ou qu'on a redimensionné la fenêtre du terminal)
-* `/` (par exemple /toto pour trouver toto, rototo et totoro) pour faire une recherche (ça fonctionne aussi dans les pages de man) ou * pour faire une recherche exacte sur le mot sur lequel est placé le curseur, puis n pour aller à l'occurrence suivante correspondant au motif de la recherche ou N pour aller à la précédente.
+* `/` (par exemple /toto pour trouver toto, rototo et totoro) pour faire une recherche (ça fonctionne aussi dans les pages de man) ou `*` pour faire une recherche exacte sur le mot sur lequel est placé le curseur, puis n pour aller à l'occurrence suivante correspondant au motif de la recherche ou N pour aller à la précédente.
 * `u` pour défaire votre dernière action (undo), et `^r` pour refaire une action que vous avez défaite (on peut annuler et refaire plusieurs actions, par exemple `42u` `42^r` défait puis refait les 42 dernières actions).
 * `.` permet de refaire la dernière action que l'on a fait (rien à voir avec undo et redo cette fois), par exemple si je suis passé en mode insertion pour écrire toto puis que je suis sorti du mode insertion et que j'appuie sur `.`, un nouveau toto s'écrit (ce qui donnera probablement tottotoo).
 * `gf` pour ouvrir le fichier sur le nom duquel se trouve le curseur
