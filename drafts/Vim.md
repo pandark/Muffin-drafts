@@ -18,7 +18,7 @@ Il y a plusieurs __modes__ dans vim, dont principalement
 ### Les déplacements
 __Lorsque vous avez compris le principe du déplacement, vous pouvez l'appliquer dans à peu près tous les modes sauf l'insertion (d'où l'intérêt de sortir du mode insertion dès que vous avez fini d'écrire)__, pour la suppression, la copie, la sélection, l'indentation, la mise en majuscule, le rot13, etc.
 
-En gros, on peut se déplacer dans les quatre directions (avec les flèches ou hjkl), mais aussi, et c'est bien plus intéressant, par mot, par paragraphe, à l'intérieur ou à l'extérieur de paires de signes (parenthèses, accolades, chevrons…), vers une ligne dont on connait le numéro, etc.
+En gros, on peut se déplacer dans les quatre directions (avec les flèches ou `h``j``k``l`), mais aussi, et c'est bien plus intéressant, par mot, par paragraphe, à l'intérieur ou à l'extérieur de paires de signes (parenthèses, accolades, chevrons…), vers une ligne dont on connait le numéro, etc.
 
 Une fois que vous avez eu un aperçu de tout ça via vimtutor, vous voudrez sans doute pouvoir expliquer aux emacsiens que vous croisez que __votre éditeur à vous, il roxx du poney par pack de douze__ (et accessoirement être plus efficaces et avoir quelques aides visuelles lorsque vous éditez votre code).
 
@@ -67,7 +67,7 @@ En mode insertion, lorsque vous avez commencé à écrire un mot, vous pouvez ta
 ### Ouvrir des fichiers et des buffers
 * `:e repertoire/nomdufichier.ext` ouvre un fichier depuis le disque dur (sans utiliser un éventuel buffer déjà existant)
 * `:b repertoire/nomdufichier.ext` ouvre le buffer correspondant au fichier (s'il est déjà ouvert, il n'est pas rechargé depuis le disque)
-* `:n` pour aller au buffer ouvert suivant, et `:prev` pour aller au précédant (`:first` ou `:rewind` pour le premier et `:last` pour le dernier).
+* `:n` pour aller au buffer ouvert suivant, et `:N` ou `:prev` pour aller au précédant (`:first` ou `:rewind` pour le premier et `:last` pour le dernier).
 * `:b1`, `:b2` pour aller au premier, deuxième, etc. buffer ou `:b#` pour aller au buffer ouvert avant celui en cours
 
 ### Les splits
