@@ -97,6 +97,7 @@ Pour installer des plugins plus simplement : [Pathogen](https://github.com/tpope
 * [FSwitch](http://www.vim.org/scripts/script.php?script_id=2590), pour passer rapidement des fichiers .c aux fichiers .h et inversement
 * Ajout de surround (s) aux mouvements inside (i) et arround (a) (par exemple pour remplacer des guillemets par des chevrons) : [surround.vim](https://github.com/tpope/vim-surround)
 * Pour utiliser des linters dans vim (utilise make pour les fichiers C par défaut) : [syntastic.vim](https://github.com/scrooloose/syntastic)
+* [Clang complete](https://github.com/Rip-Rip/clang_complete) pour une complétion améliorée du C, C++, Objective-C et Objective-C++ en utilisant Clang.
 * Pour afficher les marques, les lignes modifiées, etc dans la gouttière à gauche : [quickfixsigns.vim](https://github.com/tomtom/quickfixsigns_vim)
 * Utiliser git dans vim : [fugitive.vim](https://github.com/tpope/vim-fugitive)
 * Une meilleur gestion du `%` : [python_match.vim](https://github.com/vim-scripts/python_match.vim)
